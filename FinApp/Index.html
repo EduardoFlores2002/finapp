@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinApp solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="indexstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="MAIN.JS">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg  headerNav" style=" background-color: #445464;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html" style="color: white;"><b>FinApp Solutions</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#planes" style="color: white;">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Cronograma</a>
+            </li>
+            <li class="nav-item">
+              <a href="archivos/DerechosDeAutor.pdf" class="nav-link" aria-disabled="true"
+                style="color: white;">Derechos de autor</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="carruselCategorias" class="carousel slide m-0 p-0">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselCategorias" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carruselCategorias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carruselCategorias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div id="acabados" class="banner_item">
+          <div class="banner_category">
+            <a href="acabados.php" style="text-decoration: none;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="ferreteria" class="banner_item">
+          <div class="banner_category">
+            <a href="ferreteria.php" style="text-decoration: none;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="plomeria" class="banner_item">
+          <div class="banner_category">
+            <a href="plomeria.php" style="text-decoration: none;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselCategorias" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previo</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselCategorias" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <br>
+  <bold class='text-center text-danger' style="margin-top: 3rem;">
+    <h1 style="color: #445464; ">SÉ PARTE DE LA INNOVACIÓN CON FINAPP SOLUTIONS</h1>
+  </bold><br>
+
+  <div class="container text-center h-100">
+    <div class="row h-100" style="padding: 0 150px 0 150px; margin-top: 3rem;">
+      <div class="col-sm-3 custom-col-button" id="Comuni-boton" onclick="handleClick('sabias-que')">
+        <b>¿SABÍAS QUE?</b>
+      </div>
+      <div class="col-sm-3 custom-col-button" id="Comuni-boton2" onclick="handleClick('planes')">
+        <b>CONOCE MÁS SOBRE NUESTROS SERVICIOS</b>
+      </div>
+      <div class="col-sm-3 custom-col-button" id="Comuni-boton3" onclick="handleClick('Documentos')">
+        <b>Documentos legales</b>
+      </div>
+      <div class="col-sm-3 custom-col-button" id="Comuni-boton4" onclick="handleClick('Nosotros')">
+        <b>Nosotros</b>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center">
+    <div class="row" id="Bienvenida">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3" style="color: #445464">
+        <H1>HOLA <br>BIENVENIDO</H1>
+      </div>
+      <div class="col-sm-3" id="Contacto" onclick="handleClick('Contacto')">
+        ¡Hola! <br>
+        ¿Cómo podemos ayudarte?
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-whatsapp"
+          viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+        </svg>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center ">
+    <div class="row ">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6" id="Nosotros">
+        <h4>Somos un equipo especializado en crear soluciones innovadoras mediante el uso de la tecnología para
+          simplificar y optimizar la gestión de
+          tus finanzas personales y empresariales de manera facíl y sencilla para ti.</h4>
+      </div>
+      <div class="col-sm-3">
+      </div>
+
+    </div>
+  </div>
+
+  <img src="images/aprender-contabilidad-desde-cero.jpg" class="img-fluid " alt="..." style="margin-top: 5rem;">
+
+  <div class="container-fluid text-center h-100" style="margin-top: 3rem;">
+    <div class="row h-100">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+        <img src="images/hombre-1.png" alt="Productos-2">
+      </div>
+      <div class="col-sm-3">
+        <img src="images/mujer2.png">
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+    </div>
+    <!--  
+  <br>
+  <bold class='text-center text-danger'>
+    <h1 style="color: #005caf;">DISTRIBUIDORES AUTORIZADOS</h1>
+  </bold><br>
+
+
+
+  <div class="container text-center">
+   
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle Logo-casas" width="150" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Casa cravioto ferreterias</title><rect width="100%" height="100%" fill="none"/><image href="images/CRAVIOTOLOGO10.png" x="0" y="0" width="145" height="145" /></svg>
+        <h2 class="fw-normal">Casa cravioto ferreterias</h2>
+        <h4>Venta: fisica y en linea</h4>
+        <p><a class="btn btn-secondary" href="#">Ver &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle Logo-casas" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Arx buy sell</title><rect stroke="var(--bs-secondary-color)" stroke-width="5" fill="none" /><image href="images/Logo-ARX.svg" x="0" y="0" width="125" height="125"/></svg>
+        <h2 class="fw-normal">ARX BUY SELL</h2>
+        <h4>Venta: fisica</h4>
+        <p><a class="btn btn-secondary" href="#">Ver &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle Logo-casas" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Otro</h2>
+        <h3>Venta: física y en línea</h3>
+        <p><a class="btn btn-secondary" href="#">Ver &raquo;</a></p>
+      </div>
+    </div>
+  </div>  -->
+
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" id="planes">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Personal</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$5<small class="text-body-secondary fw-light">/mens</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Dirigido a:</li>
+                <p>Individuos que buscan mejorar su gestión financiera de manera organizada y accesible. </p>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg " style="background-color: #70acb0;color: white;">Iniciar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Empresarial básico</h4>
+            </div>
+            <div class="card-body" onclick="handleClick('catalogo')">
+              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mens</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Dirigido a:</li>
+                <p>Empresas o startups que necesitan soluciones esenciales para la gestión financiera.</p>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg "  style="background-color: #70acb0; color: white;" href="catalogo.html">Más información</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 " style="background-color: #70acb0; color: white;">
+              <h4 class="my-0 fw-normal"  >Empresarial premium</h4>
+            </div>
+            <div class="card-body" onclick="handleClick('Contacto')" >
+              <h1 class="card-title pricing-card-title">$29<small class="fw-light">/mens</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Dirigido a: </li>
+                <p>Empresas que requieren herramientas avanzadas para análisis, gestión y colaboración financiera.</p>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg" style="background-color: #70acb0; color: white;" >Contactanos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <br>
+    <bold class='text-center text-danger'>
+      <h1 style="color: #70acb0;">SÉ PARTE DE ELLOS</h1>
+    </bold><br>
+
+    <div class="d-grid gap-2 col-3 mx-auto">
+      <button class="btn" style="background-color: #70acb0; color: white; margin-bottom: 3rem;" type="button">
+        <h4>REGISTRATE</h4>
+      </button>
+    </div>
+
+
+    <div class="container-fluid" style="background-color: #445464; color: white">
+      <footer class="py-5">
+        <div class="row" id="footer-option">
+          <div class="col-sm-6" id="footer-contacto">
+            <h5>CONTACTO</h5>
+            <p>5541881363
+              <br>Av. toltecas #263
+              <br>Col. Santa Clara Ecatepec
+              <br> Estado de México C.P.55540
+            </p>
+          </div>
+
+          <div class="col-sm-6">
+            <ul class="nav flex-column" id="footer-options">
+              <h5>Menú</h5>
+              <li class="nav-item mb-2"><a href="Nosotros.html" class="nav-link p-0 menu1">Nosotros</a></li>
+              <li class="nav-item mb-2"><a href="#planes" class="nav-link p-0 menu1">Productos</a></li>
+              <li class="nav-item mb-2"><a href="https://www.whatsapp.com/?lang=es_LA" class="nav-link p-0 menu1">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-around py-4 my-4 border-top w-100">
+          <p>&copy; 2024 FinApp Solutions, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.tiktok.com/es/"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                </svg>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+/* body{
+  background-image: url(images/Background-pared.webp);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+body{
+  background-color: #cecece;
+}
+
+/* header{
+  background: rgba(0,0,0,0.3);
+  
+} */
+
+
+
+.open-sans-{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.headerNav{
+  height: 100px;
+ color: white;
+}
+
+.banner_item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#acabados {
+  background-image: url(images/PORTADA-finanzas-tienda-2023.webp);
+}
+
+#ferreteria {
+  background-image: url(images/portada2-min.jpg);
+}
+
+#plomeria {
+  background-image: url(images/Portada-Contabilidad.jpg);
+}
+.logo-verdeplus{
+  width: 10px;
+}
+.Logo-ARX{
+  width: 140px;
+}
+
+#Bienvenida{
+margin-top: 2rem;
+height: 50PX;
+margin-bottom: 60px;
+text-align: left;
+}
+
+#Botones-comunidad{
+  text-align: center;
+
+  
+}
+
+#Nosotros{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #445464;
+  text-align: justify;
+  
+}
+
+#Contacto{
+  background-color: #25d366;
+  color: white;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row; /* Para apilar los elementos verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: left; /* Centra el texto */
+}
+#Contacto:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.custom-col-button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  height: 100%;
+  text-align: center;
+}
+
+.custom-col-button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Opcional: Efecto de transición suave */
+.custom-col-button:active {
+  transform: scale(0.98);
+}
+
+#Comuni-boton{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: #445464;; 
+  color: white;
+  
+  
+}
+
+#Comuni-boton2{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: #7054b4 ; 
+  color: white;
+
+}
+#Comuni-boton3{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: #70acb0;
+  color: white;
+
+}
+#Comuni-boton4{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: #97badd; 
+  color: white;
+}
+.Logo-casas{
+  border: solid 5px #005caf;
+}
+
+#temporada{
+  background-color: #907cac; 
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#registro{
+  height: 50px;
+}
+
+/* #footer-option{
+  color: white;
+} */
+
+#footer-option .nav-link:hover {
+  color: #bdbdbd; /* Cambia el color del texto */
+  text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+#footer-contacto{
+text-align: left;
+
+}
+
+
+.contenedor {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+main{
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.boton-planes:hover{
+  background-color: #5e9094;;
+
+}
+
+.menu1{
+  color: white;
+}
+
+.imagencon{
+  height: 500px;
+}
